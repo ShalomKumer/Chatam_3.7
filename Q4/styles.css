@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+
+.calendar-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ccc;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendar-header button {
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+#month-year {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.view-toggle {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.view-toggle button {
+  background-color: #eee;
+  border: 1px solid #aaa;
+  padding: 8px 14px;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.calendar-table th {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.calendar-table td {
+  width: 14.28%;
+  height: 100px;
+  vertical-align: top;
+  border: 1px solid #ddd;
+  padding: 6px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* היום הנוכחי */
+.calendar-table td.today {
+  border: 2px solid #0077cc;
+  background-color: #e6f4ff;
+}
+
+/* תאים שאינם שייכים לחודש הנוכחי */
+.calendar-table td.other-month {
+  background-color: #eee;
+  color: #999;
+}
+
+/* מספר היום */
+.day-number {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 4px;
+}
+
+/* הערה שמוצגת בתוך התא */
+.event-note {
+  font-size: 0.75em;
+  background-color: #fff7c0;
+  color: #333;
+  border-radius: 4px;
+  padding: 4px;
+  margin-top: 6px;
+  word-break: break-word;
+}
+.other-month {
+  background-color: #eee;
+  color: #999;
+}
